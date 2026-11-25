@@ -11,6 +11,9 @@ define('DB_PASS', getenv('PL_DB_PASS') !== false ? getenv('PL_DB_PASS') : '');
 
 define('APP_NAME', 'Play and Learn');
 
+// Languages the website can show. The first one is the default.
+define('LANGUAGES', ['en' => 'English', 'es' => 'Español']);
+
 // Web path to this folder, e.g. "/play-and-learn". Worked out automatically;
 // set it by hand here if links break on your server.
 $docRoot = realpath($_SERVER['DOCUMENT_ROOT'] ?? '') ?: '';
